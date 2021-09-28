@@ -1,0 +1,15 @@
+waitress
+Flask
+ipython
+numpy
+pandas
+py4j
+pyspark
+pytz
+gunicorn
+flask-restful
+requests
+Flask-HTTPAuth
+jaeger_client
+configparser
+Flask-OpenTracing

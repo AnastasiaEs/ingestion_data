@@ -1,0 +1,13 @@
+name: ingestion
+dependencies:
+  - python=3.9
+  - jupyter
+  - ipython
+  - numpy
+  - numpy-base
+  - pandas
+  - py4j
+  - pyspark
+  - pytz
+  - flask_httpauth
+  - flask_restful
