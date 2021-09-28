@@ -49,8 +49,8 @@ You should see the following screen:
 ## Docker Local
 * docker build -t alukina/ingestion:v1 . 
 * docker build --no-cache --pull -t alukina/ingestion:v1 . 
-//entrar al contenedor docker: * docker run -it alukina/ingestion:v1 /bin/bash  
-* docker run -it -p 6200:6200 alukina/ingestion:v1  
+//entrar al contenedor docker: * d`ocker run -it alukina/ingestion:v1 /bin/bash  
+* docker run -v "/home/alukina/TERRITORIOS/logs:/app/logs" -p 6200:6200 alukina/ingestion:v1  
 ##  Llamar a la api desde postman    
 Postman Get: http://localhost:6200/ingestion_data/v1/example_table 
 --------------------------------------------

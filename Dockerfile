@@ -92,11 +92,11 @@ EXPOSE 6200
 
 # carpeta donde irá el config.properties
 VOLUME "$APP_HOME"ingestionpack/config
-VOLUME "$APP_HOME"logs
+VOLUME "$LOGGING_DIR"
 #ENTRYPOINT ["spark-submit", "--master", "yarn", "--deploy-mode", "client", "--proxy-user", "shelly", "--packages", "app.py"]
 #ENTRYPOINT ["python"]
 #CMD ["conda activate spark","app.py"]
 
 # Launch the API
-CMD ["bash","python","-u","source activate spark && python main.py" ]
+CMD ["bash","-c","source activate spark && python main.py" ]
 #ENTRYPOINT service rsyslog start && /bin/bash start.sh
